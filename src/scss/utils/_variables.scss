@@ -1,0 +1,26 @@
+// Breakpoints
+$tablet-width: 768px;
+
+// Fonts
+@font-face {
+  font-family: "Source-Sans-Pro-regular";
+  src: url("/src/fonts/source-sans-pro-latin-400-normal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Source-Sans-Pro-black";
+  src: url("/src/fonts/source-sans-pro-latin-900-normal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Square721-BT-bold";
+  src: url("/src/fonts/square721-bt-700-normal.ttf") format("truetype");
+}
+
+$main-font: "Source-Sans-Pro-regular", sans-serif;
+$main-title-font: "Source-Sans-Pro-black", sans-serif;
+$accent-title-font: "Square721-BT-bold", sans-serif;
+
+//   // transitions
+//   --normal-transition-duration: 250ms;
+//   --normal-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
