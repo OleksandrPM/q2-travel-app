@@ -1,0 +1,75 @@
+.hero {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: end;
+    padding-left: 0.018vw;
+  }
+}
+
+.hero_container {
+  @media screen and (min-width: $tablet-width) {
+    width: 47.3vw;
+
+    background-image: url("../../images/point-grid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.hero_title {
+  line-height: 1.17;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 1.927vw;
+    padding-left: 1.927vw;
+
+    font-size: 4.687vw;
+  }
+}
+
+.hero_title_accent {
+  font-family: $accent-title-font;
+  line-height: 1.33;
+
+  color: $accent-color;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-left: 5vw;
+
+    font-size: 4.375vw;
+  }
+}
+
+.hero_article {
+  color: $main-text-color;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 34.635vw;
+    margin-bottom: 3.542vw;
+    padding-left: 1.927vw;
+
+    font-size: 1.458vw;
+    line-height: 1.29;
+
+    border-left: 0.208vw solid $accent-color;
+  }
+}
+
+.hero_text {
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 2.031vw;
+  }
+}
+
+.hero_button {
+  line-height: 1.26;
+
+  color: $inverse-color;
+  background-color: $button-color;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0.625vw 2.292vw 0.781vw;
+
+    font-size: 1.406vw;
+  }
+}
