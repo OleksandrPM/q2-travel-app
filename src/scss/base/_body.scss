@@ -1,5 +1,11 @@
 .page {
   scroll-behavior: smooth;
 
+  margin: 0;
+
   border-color: $background-color;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-left: 1.82vw;
+  }
 }

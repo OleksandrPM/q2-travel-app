@@ -43,17 +43,26 @@
       />
     </li>
   </ul>
-  <div class="hero-gallery_pagination">
-    <div class="hero-gallery_array back disable">
+  <div class="hero-gallery_pagination pagination">
+    <button
+      class="pagination_button back"
+      type="button"
+      title="back by one"
+      disabled
+    >
       <svg width="32" height="32">
-        <use href="/src/images/sprite.svg#array"></use>
+        <use href="/src/images/sprite.svg#arrow"></use>
       </svg>
-    </div>
-    <button class="hero-gallery_button" type="button">See more photos</button>
-    <div class="hero-gallery_array forward">
+    </button>
+    <p class="pagination_text">See more photos</p>
+    <button
+      class="pagination_button forward"
+      type="button"
+      title="forward by one"
+    >
       <svg width="32" height="32">
-        <use href="/src/images/sprite.svg#array"></use>
+        <use href="/src/images/sprite.svg#arrow"></use>
       </svg>
-    </div>
+    </button>
   </div>
 </div>

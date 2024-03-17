@@ -1,0 +1,46 @@
+.hero-more-trips {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet-width) {
+    left: 0;
+    top: 42.276vw;
+
+    gap: 1.404vw;
+  }
+}
+
+.hero-more-trips_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 3.125vw;
+  height: 3.125vw;
+
+  fill: $link-color;
+
+  border-radius: 50%;
+  background-color: $background-color;
+  opacity: 0.79;
+
+  box-shadow: $link-shadow;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 3.125vw;
+    height: 3.125vw;
+  }
+}
+
+.hero-more-trips_text {
+  line-height: 1.27;
+  font: normal normal normal 26px/33px Source Sans Pro;
+  color: #789376;
+  text-transform: capitalize;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 1.352vw;
+  }
+}

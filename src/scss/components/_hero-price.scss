@@ -1,0 +1,46 @@
+.hero-price {
+  position: absolute;
+
+  display: inline-block;
+  padding-top: 0.416vw;
+  padding-right: 2.808vw;
+  padding-bottom: 0.884vw;
+  padding-left: 1.092vw;
+
+  background-color: $background-color;
+  border-radius: 0.624vw;
+  box-shadow: $hero-price-shadow;
+
+  @media screen and (min-width: $tablet-width) {
+    top: 3.536vw;
+    right: 47.008vw;
+  }
+}
+
+.hero-price_title {
+  margin-bottom: 0.338vw;
+  line-height: 1.42;
+  color: $accent-color;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 1.976vw;
+  }
+}
+
+.hero-price_line {
+  width: 8.84vw;
+  height: 0;
+  margin-bottom: 0.806vw;
+
+  border: 0.208vw solid $button-color;
+}
+
+.hero-price_text {
+  line-height: 1.25;
+
+  color: $title-color;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 1.664vw;
+  }
+}

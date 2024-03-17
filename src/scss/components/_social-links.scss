@@ -1,0 +1,32 @@
+.socials_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.56vw;
+}
+
+.socials_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: $title-color;
+
+  border-radius: 50%;
+  border: 0.052vw solid $accent-color;
+  background-color: $background-color;
+  opacity: 0.79;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 3.125vw;
+    height: 3.125vw;
+  }
+
+  &:hover {
+    box-shadow: $link-shadow;
+  }
+}
+
+.socials_icon {
+  width: 1.664vw;
+  height: 1.664vw;
+}

@@ -1,8 +1,24 @@
 .hero {
+  position: relative;
+
+  background-image: url("/src/images/countries/vietnam/hero-background/vietnam-bkg-def.jpg");
+  background-repeat: no-repeat;
+
+  @media only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2) {
+    background-image: url("/src/images/countries/vietnam/hero-background/vietnam-bkg@2x.webp");
+  }
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
     justify-content: end;
-    padding-left: 0.018vw;
+
+    padding-bottom: 3.172vw;
+
+    background-size: 53.82vw auto;
+    background-position: left 0vw top -5.408vw;
   }
 }
 
@@ -10,14 +26,18 @@
   @media screen and (min-width: $tablet-width) {
     width: 47.3vw;
 
-    background-image: url("../../images/point-grid.svg");
+    background-image: url("/src/images/point-grid.svg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: 4.888vw auto;
+    background-position: top 12.012vw right 0.312vw;
   }
 }
 
 .hero_title {
   line-height: 1.17;
+  text-transform: capitalize;
+
+  text-shadow: $title-shadow;
 
   @media screen and (min-width: $tablet-width) {
     padding-top: 1.927vw;
@@ -62,14 +82,71 @@
 }
 
 .hero_button {
+  position: relative;
+  width: 10.556vw;
+  height: 3.172vw;
+
   line-height: 1.26;
 
   color: $inverse-color;
-  background-color: $button-color;
+
+  transition: all 0.5s;
+  background-color: $accent-color;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 0.625vw 2.292vw 0.781vw;
+    // padding: 0.625vw 2.292vw 0.781vw;
 
+    font-size: 1.406vw;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: $button-color;
+    transition: all 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid $button-color;
+    transform: scale(1.2, 1.2);
+  }
+  &:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.hero_button_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  width: 100%;
+
+  line-height: 1.26;
+
+  @media screen and (min-width: $tablet-width) {
     font-size: 1.406vw;
   }
 }
