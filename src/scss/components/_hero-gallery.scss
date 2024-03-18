@@ -6,10 +6,15 @@
 
 .hero-gallery_list {
   display: inline-flex;
-  gap: 0.008vw;
+  gap: 0.832vw;
 }
 
 .hero-gallery_item {
+  overflow: hidden;
+
+  border-radius: 0.52vw;
+  box-shadow: $picture-shadow;
+
   @media screen and (min-width: $tablet-width) {
     width: 19.01vw;
   }
