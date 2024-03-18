@@ -35,13 +35,16 @@ $button-shadow-color: #00000087;
 $link-hower-shadow-color: #0000002e;
 $socials-shadow-color: #00000045;
 
-// shadows
+// Shadows
 $title-shadow: 0vw 0.833vw 1.092vw $title-shadow-color;
 $button-shadow: 0.26vw 0vw 0.364vw $button-shadow-color;
 $picture-shadow: 0.26vw 0.312vw 0.312vw $title-shadow-color;
 $pagination-text-shadow: 0.26vw 0vw 0.364vw $title-shadow-color;
 $hero-price-shadow: -0.416vw 0.728vw 1.404vw $title-shadow-color;
 $link-shadow: 0.26vw 0.728vw 0.78vw $link-hower-shadow-color;
+
+// Animations
+$pulse-animation: pulse 1s infinite;
 
 //   // transitions
 //   --normal-transition-duration: 250ms;

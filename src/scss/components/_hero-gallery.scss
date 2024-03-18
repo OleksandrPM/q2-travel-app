@@ -68,11 +68,11 @@
 
     box-shadow: $button-shadow;
 
-    &.forward {
+    &.forward svg {
       transform: rotate(-90deg);
     }
 
-    &.back {
+    &.back svg {
       transform: rotate(90deg);
     }
 

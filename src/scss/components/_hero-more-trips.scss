@@ -28,7 +28,37 @@
 
   box-shadow: $link-shadow;
 
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform border;
+
   @media screen and (min-width: $tablet-width) {
+    width: 3.125vw;
+    height: 3.125vw;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    border: solid 0.052vw $accent-color;
+
+    & svg {
+      fill: $accent-color;
+    }
+
+    & + .hero-more-trips_text {
+      transform: scale(1.1);
+      color: $accent-color;
+    }
+  }
+
+  &.pulse {
+    & svg {
+      fill: $accent-color;
+    }
+  }
+
+  & svg {
+    fill: $link-color;
     width: 3.125vw;
     height: 3.125vw;
   }
@@ -36,11 +66,25 @@
 
 .hero-more-trips_text {
   line-height: 1.27;
-  font: normal normal normal 26px/33px Source Sans Pro;
-  color: #789376;
   text-transform: capitalize;
+
+  color: $link-color;
+
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform color;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 1.352vw;
+  }
+
+  &:hover {
+    color: $accent-color;
+
+    // & ~ .hero-more-trips_button {
+    //   fill: $accent-color;
+    //   border: solid 0.052vw $accent-color;
+    //   animation: $pulse-animation;
+    // }
   }
 }
