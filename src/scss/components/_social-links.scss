@@ -5,28 +5,79 @@
 }
 
 .socials_link {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  fill: $title-color;
+  &:hover {
+    & .socials_el {
+      opacity: 0;
+    }
+
+    & .socials_hover-el {
+      box-shadow: $link-shadow;
+      opacity: 1;
+    }
+  }
+}
+
+.socials_el {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 50%;
   border: 0.052vw solid $accent-color;
   background-color: $background-color;
   opacity: 0.79;
 
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+
   @media screen and (min-width: $tablet-width) {
     width: 3.125vw;
     height: 3.125vw;
-  }
-
-  &:hover {
-    box-shadow: $link-shadow;
   }
 }
 
 .socials_icon {
   width: 1.664vw;
   height: 1.664vw;
+
+  fill: $title-color;
+}
+
+.socials_hover-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 3.125vw;
+  padding-left: 0.884vw;
+  padding-right: 1.352vw;
+
+  display: inline-flex;
+  gap: 1.3vw;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.352vw;
+  line-height: 1.27;
+
+  opacity: 0;
+
+  color: $inverse-color;
+  background-color: $link-color;
+  border-radius: 4.992vw;
+  box-shadow: $link-shadow;
+
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: width opacity;
+
+  & svg {
+    stroke: $inverse-color;
+  }
 }
