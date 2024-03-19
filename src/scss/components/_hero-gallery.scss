@@ -2,6 +2,8 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+
+  animation: right-to-left 1.5s ease 1s both;
 }
 
 .hero-gallery_list {
@@ -67,6 +69,15 @@
     opacity: 0.79;
 
     box-shadow: $button-shadow;
+
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform border;
+
+    &:hover {
+      transform: scale(1.2);
+      border: solid 0.052vw $accent-color;
+    }
 
     &.forward svg {
       transform: rotate(-90deg);

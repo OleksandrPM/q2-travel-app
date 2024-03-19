@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
 
+  animation: left-to-right 1.5s ease 1s both;
+
   @media screen and (min-width: $tablet-width) {
     left: 0;
     top: 42.276vw;

@@ -39,6 +39,8 @@
 
   text-shadow: $title-shadow;
 
+  animation: top-to-bottom 1000ms ease 200ms both;
+
   @media screen and (min-width: $tablet-width) {
     padding-top: 1.927vw;
     padding-left: 1.927vw;
@@ -62,6 +64,8 @@
 
 .hero_article {
   color: $main-text-color;
+
+  animation: right-to-left 1.5s ease 1s both;
 
   @media screen and (min-width: $tablet-width) {
     width: 34.635vw;

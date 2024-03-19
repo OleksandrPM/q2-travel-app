@@ -11,6 +11,8 @@
   border-radius: 0.624vw;
   box-shadow: $hero-price-shadow;
 
+  animation: top-to-bottom 1.5s ease 1s both;
+
   @media screen and (min-width: $tablet-width) {
     top: 3.536vw;
     right: 47.008vw;
