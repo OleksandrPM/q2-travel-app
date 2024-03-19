@@ -1,16 +1,20 @@
 .hero-more-trips {
-  position: absolute;
+  // position: absolute;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 3vw;
+  margin-bottom: 5vw;
 
   animation: left-to-right 1.5s ease 1s both;
 
   @media screen and (min-width: $tablet-width) {
+    position: absolute;
     left: 0;
     top: 42.276vw;
 
     gap: 1.404vw;
+    margin-bottom: 0;
   }
 }
 
@@ -19,8 +23,8 @@
   align-items: center;
   justify-content: center;
 
-  width: 3.125vw;
-  height: 3.125vw;
+  width: 8.564vw;
+  height: 8.564vw;
 
   fill: $link-color;
 
@@ -60,13 +64,20 @@
   }
 
   & svg {
+    width: 8.564vw;
+    height: 8.564vw;
+
     fill: $link-color;
-    width: 3.125vw;
-    height: 3.125vw;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 3.125vw;
+      height: 3.125vw;
+    }
   }
 }
 
 .hero-more-trips_text {
+  font-size: 3.3vw;
   line-height: 1.27;
   text-transform: capitalize;
 
@@ -82,11 +93,5 @@
 
   &:hover {
     color: $accent-color;
-
-    // & ~ .hero-more-trips_button {
-    //   fill: $accent-color;
-    //   border: solid 0.052vw $accent-color;
-    //   animation: $pulse-animation;
-    // }
   }
 }

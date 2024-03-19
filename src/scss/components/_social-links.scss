@@ -27,10 +27,15 @@
   align-items: center;
   justify-content: center;
 
-  border-radius: 50%;
-  border: 0.052vw solid $accent-color;
+  width: 8.564vw;
+  height: 8.564vw;
+
   background-color: $background-color;
   opacity: 0.79;
+  border-radius: 50%;
+  border-width: 0.1vw;
+  border-style: solid;
+  border-color: $accent-color;
 
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -39,14 +44,21 @@
   @media screen and (min-width: $tablet-width) {
     width: 3.125vw;
     height: 3.125vw;
+
+    border-width: 0.052vw;
   }
 }
 
 .socials_icon {
-  width: 1.664vw;
-  height: 1.664vw;
+  width: 4.559vw;
+  height: 4.559vw;
 
   fill: $title-color;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 1.664vw;
+    height: 1.664vw;
+  }
 }
 
 .socials_hover-el {
@@ -54,28 +66,40 @@
   top: 0;
   left: 0;
 
-  height: 3.125vw;
-  padding-left: 0.884vw;
-  padding-right: 1.352vw;
-
   display: inline-flex;
-  gap: 1.3vw;
+  gap: 2vw;
   align-items: center;
   justify-content: center;
 
-  font-size: 1.352vw;
+  height: 8.564vw;
+  padding-left: 2.422vw;
+  padding-right: 3.704vw;
+
+  font-size: 3.704vw;
   line-height: 1.27;
 
   opacity: 0;
 
   color: $inverse-color;
   background-color: $link-color;
-  border-radius: 4.992vw;
+  border-radius: 4.282vw;
   box-shadow: $link-shadow;
 
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: width opacity;
+
+  @media screen and (min-width: $tablet-width) {
+    gap: 1.3vw;
+
+    height: 3.125vw;
+    padding-left: 0.884vw;
+    padding-right: 1.352vw;
+
+    font-size: 1.352vw;
+
+    border-radius: 4.992vw;
+  }
 
   & svg {
     stroke: $inverse-color;

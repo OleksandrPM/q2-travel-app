@@ -1,6 +1,14 @@
 .socials {
   position: fixed;
-  top: 12.844vw;
+
+  @media screen and (max-width: 767.98px) {
+    left: 2vw;
+    top: 90vw;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    top: 12.844vw;
+  }
 
   animation: left-to-right 1.5s ease 1s both;
 }

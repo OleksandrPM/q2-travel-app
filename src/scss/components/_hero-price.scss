@@ -1,5 +1,7 @@
 .hero-price {
   position: absolute;
+  top: 5vw;
+  right: 5vw;
 
   display: inline-block;
   padding-top: 0.416vw;
@@ -30,14 +32,19 @@
 }
 
 .hero-price_line {
-  width: 8.84vw;
+  width: 18vw;
   height: 0;
   margin-bottom: 0.806vw;
 
   border: 0.208vw solid $button-color;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 8.84vw;
+  }
 }
 
 .hero-price_text {
+  font-size: 3.5vw;
   line-height: 1.25;
 
   color: $title-color;

@@ -3,6 +3,8 @@
 
   background-image: url("/src/images/countries/vietnam/hero-background/vietnam-bkg-def.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left 50% top -20%;
 
   @media only screen and (min--moz-device-pixel-ratio: 2),
     only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -23,6 +25,8 @@
 }
 
 .hero_container {
+  background-color: rgba(255, 255, 255, 0.7);
+
   @media screen and (min-width: $tablet-width) {
     width: 47.3vw;
 
@@ -34,6 +38,7 @@
 }
 
 .hero_title {
+  font-size: 10vw;
   line-height: 1.17;
   text-transform: capitalize;
 
@@ -50,20 +55,29 @@
 }
 
 .hero_title_accent {
+  margin-left: 5vw;
+
   font-family: $accent-title-font;
+  font-size: 9.35vw;
   line-height: 1.33;
 
   color: $accent-color;
 
   @media screen and (min-width: $tablet-width) {
-    margin-left: 5vw;
-
     font-size: 4.375vw;
   }
 }
 
 .hero_article {
+  margin-bottom: 3.542vw;
+  padding-left: 1.927vw;
+
+  font-size: 5.25vw;
+  line-height: 1.29;
+
   color: $main-text-color;
+
+  border-left: 0.7vw solid $accent-color;
 
   animation: right-to-left 1.5s ease 1s both;
 
@@ -73,24 +87,19 @@
     padding-left: 1.927vw;
 
     font-size: 1.458vw;
-    line-height: 1.29;
 
     border-left: 0.208vw solid $accent-color;
   }
 }
 
 .hero_text {
-  @media screen and (min-width: $tablet-width) {
-    margin-bottom: 2.031vw;
-  }
+  margin-bottom: 2.031vw;
 }
 
 .hero_button {
   position: relative;
-  width: 10.556vw;
-  height: 3.172vw;
-
-  line-height: 1.26;
+  width: 28.5vw;
+  height: 8.5vw;
 
   color: $inverse-color;
 
@@ -98,9 +107,8 @@
   background-color: $accent-color;
 
   @media screen and (min-width: $tablet-width) {
-    // padding: 0.625vw 2.292vw 0.781vw;
-
-    font-size: 1.406vw;
+    width: 10.556vw;
+    height: 3.172vw;
   }
 
   &::before {
@@ -130,7 +138,7 @@
     z-index: 1;
     opacity: 0;
     transition: all 0.3s;
-    border: 1px solid $button-color;
+    border: 0.052vw solid $button-color;
     transform: scale(1.2, 1.2);
   }
   &:hover::after {
@@ -148,6 +156,7 @@
 
   width: 100%;
 
+  font-size: 4vw;
   line-height: 1.26;
 
   @media screen and (min-width: $tablet-width) {

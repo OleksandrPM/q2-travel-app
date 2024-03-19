@@ -3,12 +3,20 @@
   width: 100%;
   overflow: hidden;
 
-  animation: right-to-left 1.5s ease 1s both;
+  animation: right-to-left 1.8s ease 1.3s both;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 3vw;
+  }
 }
 
 .hero-gallery_list {
   display: inline-flex;
-  gap: 0.832vw;
+  gap: 2vw;
+
+  @media screen and (min-width: $tablet-width) {
+    gap: 0.832vw;
+  }
 }
 
 .hero-gallery_item {
@@ -16,6 +24,14 @@
 
   border-radius: 0.52vw;
   box-shadow: $picture-shadow;
+
+  @media screen and (max-width: 424.98px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: $mobile-width) {
+    width: 365px;
+  }
 
   @media screen and (min-width: $tablet-width) {
     width: 19.01vw;
@@ -28,28 +44,49 @@
 
 .hero-gallery_pagination {
   position: absolute;
-  top: 5.417vw;
-  right: 2.6vw;
+
+  @media screen and (max-width: 767.98px) {
+    bottom: 5vw;
+    right: 5vw;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    top: 5.417vw;
+    right: 2.6vw;
+  }
 
   &.pagination {
     display: flex;
     align-items: center;
-    gap: 0.573vw;
+    gap: 1.5vw;
+
+    @media screen and (min-width: $tablet-width) {
+      gap: 0.573vw;
+    }
   }
 
   & .pagination_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8.564vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+
+    font-size: 3.7vw;
     line-height: 1.27;
 
     color: $accent-color;
-
     background-color: $background-color;
     opacity: 0.79;
+    border-radius: 4.282vw;
 
     box-shadow: $pagination-text-shadow;
 
     @media screen and (min-width: $tablet-width) {
-      max-height: 3.125vw;
-      padding: 0.677vw 1.302vw 0.729vw;
+      height: 3.125vw;
+      padding-left: 1.302vw;
+      padding-right: 1.302vw;
 
       font-size: 1.354vw;
 
@@ -61,8 +98,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3.125vw;
-    height: 3.125vw;
+    width: 8.564vw;
+    height: 8.564vw;
 
     border-radius: 50%;
     background-color: $background-color;
@@ -73,6 +110,11 @@
     transition-duration: 350ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: transform border;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 3.125vw;
+      height: 3.125vw;
+    }
 
     &:hover {
       transform: scale(1.2);
@@ -92,9 +134,15 @@
     }
 
     & svg {
+      width: 8.564vw;
+      height: 8.564vw;
+
       fill: $accent-color;
-      width: 3.125vw;
-      height: 3.125vw;
+
+      @media screen and (min-width: $tablet-width) {
+        width: 3.125vw;
+        height: 3.125vw;
+      }
     }
   }
 }
